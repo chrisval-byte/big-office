@@ -1,0 +1,38 @@
+.header{
+    background-color: black;
+    height: 110px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title{
+    margin: 0;
+    color: white;
+    font-size: 50px;
+}
+
+.title-space{
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.link{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.link:hover{
+    color: #61dafb;
+}
+
+.link-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.link-space{
+    padding-top: 30px;
+    padding-right: 180px;
+    width: 500px;
+}

@@ -1,9 +1,11 @@
 import "./styles.css"
+import Header from "../../components/common/Header"
 
 const Home = () => {
     return (
         <div>
-            <h1 className="texto">Esta es la página de inicio</h1>
+            <Header/>
+            <h1>Estos son los demás titulos</h1>
         </div>
     )
 }
