@@ -1,38 +1,35 @@
-.header{
-    background-color: black;
-    height: 110px;
+.flex-header{
     display: flex;
     justify-content: space-between;
-}
-
-.title{
-    margin: 0;
-    color: white;
-    font-size: 50px;
+    background-color: black;
+    height: 100px;
+    align-items: center;
+    padding-top: 25px;
 }
 
 .title-space{
-    padding-top: 30px;
-    padding-left: 30px;
+    margin-left: 200px;
 }
 
-.link{
+.title-space h1{
     color: white;
-    font-size: 18px;
-    text-decoration: none;
+    font-size: 40px;
 }
 
-.link:hover{
-    color: #61dafb;
-}
-
-.link-list{
+.list-links{
     display: flex;
     justify-content: space-between;
+    width: 500px;
+    margin-right: 200px;
 }
 
-.link-space{
-    padding-top: 30px;
-    padding-right: 180px;
-    width: 500px;
+.list-links p{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.list-links p:hover{
+    text-decoration-line: underline;
+    text-decoration-color: #FED403;
 }
