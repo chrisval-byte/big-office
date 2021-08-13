@@ -1,35 +1,75 @@
-.flex-header{
-    display: flex;
-    justify-content: space-between;
-    background-color: black;
-    height: 100px;
-    align-items: center;
-    padding-top: 25px;
+@media screen and (min-width: 1400px){
+    .flex-header{
+        display: flex;
+        justify-content: space-between;
+        background-color: black;
+        height: 100px;
+        align-items: center;
+        padding-top: 25px;
+    }
+
+    .title-space{
+        margin-left: 200px;
+    }
+
+    .title-space h1{
+        color: white;
+        font-size: 40px;
+    }
+
+    .list-links{
+        display: flex;
+        justify-content: space-between;
+        width: 500px;
+        margin-right: 200px;
+    }
+
+    .list-links p{
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    .list-links p:hover{
+        text-decoration-line: underline;
+        text-decoration-color: #FED403;
+    }
 }
 
-.title-space{
-    margin-left: 200px;
-}
+@media screen and (min-width: 1200px){
+    .flex-header{
+        display: flex;
+        justify-content: space-between;
+        background-color: black;
+        height: 80px;
+        align-items: center;
+        padding-top: 20px;
+    }
 
-.title-space h1{
-    color: white;
-    font-size: 40px;
-}
+    .title-space{
+        margin-left: 100px;
+    }
 
-.list-links{
-    display: flex;
-    justify-content: space-between;
-    width: 500px;
-    margin-right: 200px;
-}
+    .title-space h1{
+        color: white;
+        font-size: 40px;
+    }
 
-.list-links p{
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-}
+    .list-links{
+        display: flex;
+        justify-content: space-between;
+        width: 500px;
+        margin-right: 200px;
+    }
 
-.list-links p:hover{
-    text-decoration-line: underline;
-    text-decoration-color: #FED403;
+    .list-links p{
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    .list-links p:hover{
+        text-decoration-line: underline;
+        text-decoration-color: #FED403;
+    }
 }
