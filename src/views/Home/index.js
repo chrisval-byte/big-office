@@ -8,7 +8,7 @@ const Home = () => {
             <Header/>
             <div className="intro-section">
                 <div className="text-section">
-                    <div className="text-container">
+                    <div className="text-container">s
                         <h1>NECESITAS RENOVAR TU MOBILIARIO</h1>
                     </div>
                     <div className="yellow-box"/>

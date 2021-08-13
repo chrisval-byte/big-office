@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1800px) {
     .intro-section{
         background-color: black;
         height: 800px;
@@ -16,6 +16,7 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
+        margin-right: 100px;
     }
 
     .text-container{
@@ -52,20 +53,83 @@
         display: flex;
         justify-content: center;
         margin-right: 200px;
+        max-width: 650px;
+        max-height: 1000px;
     }
 
     .image-style{
         padding-top: 100px;
         position: relative;
-        max-width: 650px;
-        width: 100%;
+        width: 80%;
         height: 100%;
-        max-height: 1000px;
         transform: scaleX(-1) rotate(-20deg);
     }
 }
 
-@media screen and (min-width: 1200px){
+@media screen and (max-width: 1860px){
+    .intro-section{
+        background-color: black;
+        height: 800px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .text-section{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-right: 100px;
+    }
+
+    .text-container{
+        margin-left: 100px;
+        width: 500px;
+        margin-bottom: 25px;
+    }
+
+    .text-container h1{
+        color: white;
+        font-size: 70px;
+    }
+
+    .subtitle-container{
+        margin-left: 100px;
+    }
+
+    .subtitle-container h3{
+        font-size: 40px;
+        color: white;
+    }
+
+    .yellow-box{
+        margin-left: 100px;
+        margin-bottom: 25px;
+        width: 600px;
+        background-color: #FED403;
+        height: 22px;
+        display: flex;
+        border-radius: 15px;
+    }
+
+    .image-section{
+        display: flex;
+        justify-content: center;
+        margin-right: 200px;
+        max-width: 650px;
+        max-height: 1000px;
+    }
+
+    .image-style{
+        padding-top: 100px;
+        position: relative;
+        width: 80%;
+        height: 100%;
+        transform: scaleX(-1) rotate(-20deg);
+    }
+}
+
+@media screen and (max-width: 1400px){
     .intro-section{
         background-color: black;
         height: 570px;
