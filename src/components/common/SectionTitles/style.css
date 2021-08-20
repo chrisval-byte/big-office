@@ -1,0 +1,14 @@
+.title-container-margin{
+    padding-left: 200px;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+.title-container-no-margin{
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+.section-title{
+    font-size: 50px;
+}

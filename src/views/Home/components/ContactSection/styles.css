@@ -1,0 +1,42 @@
+.contact-container{
+    height: 950px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-section{
+    margin-bottom: 50px;
+}
+
+.info-section{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.icons-section{
+    width: 50%;
+    height: 600px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.map-section{
+    background-color: #9cf49c;
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/src/assets/images/ejemplo-mapa.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.send-message{
+    margin: 0;
+    padding: 0;
+}

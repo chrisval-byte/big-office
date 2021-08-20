@@ -1,0 +1,26 @@
+.yellow-box-xl{
+    margin-bottom: 25px;
+    width: 700px;
+    background-color: #FED403;
+    height: 22px;
+    display: flex;
+    border-radius: 15px;
+}
+
+.yellow-box-l{
+    margin-bottom: 25px;
+    width: 400px;
+    background-color: #FED403;
+    height: 22px;
+    display: flex;
+    border-radius: 15px;
+}
+
+.yellow-box-m{
+    margin-top: 5px;
+    width: 170px;
+    background-color: #FED403;
+    height: 10px;
+    display: flex;
+    border-radius: 15px;
+}
