@@ -1,66 +1,36 @@
-.picture-class{
-    width: 450px;
-    height: 550px;
+.apply-border{
     border: 1px solid #FED403;
     border-radius: 5px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 1050px 1000px;
-    cursor: pointer;
 }
 
-.picture-class:hover{
+.apply-border:hover{
     transform-style: preserve-3d;
     transform: scale(1.02);
     transition: all ease 0.3s;
 }
 
-.picture-class-gallery-m{
-    width: 420px;
-    height: 400px;
-    background-color: #FED403;
-    border-radius: 15px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 420px 400px;
-}
-
-.picture-class-gallery-l{
-    width: 650px;
-    height: 400px;
-    background-color: #FED403;
-    border-radius: 15px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 650px 400px;
-}
-
-.picture-class-gallery-l:hover{
-    cursor: pointer;
-    width: 650px;
-    height: 400px;
-    background-color: #FED403;
-    border-radius: 15px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 650px 400px;
-}
-
-.picture-class:hover{
+.apply-border:hover{
     cursor: pointer;
 }
 
-.image-text {
-    font-size: 32px;
-    margin-top: 15px;
+.picture-container{
+    display: flex;
+    width: 700px;
+}
+
+.picture-title{
+    font-size: 22px;
+    margin-left: 20px;
+    margin-top: 10px;
 }
 
 .description{
     margin-top: 18px;
+    margin-left: 20px;
 }
 
-.description p {
+.description p{
     font-size: 20px;
     text-align: justify;
-    width: 450px;
+    width: 300px;
 }

@@ -2,17 +2,17 @@ import "./style.css"
 
 const Header = () => {
     return (
-        <div className="flex-header">
-            <div className="title-space">
+        <div className="header-container">
+            <div className="header-section">
                 <h1>Big Office</h1>
-            </div>
-            <div>
-                <ul className="list-links">
-                    <li><p>Nosotros</p></li>
-                    <li><p>Servicios</p></li>
-                    <li><p>Contacto</p></li>
-                    <li><p>Ubicación</p></li>
-                </ul>
+                <div>
+                    <ul className="list-links">
+                        <li><a href="#about">Nosotros</a></li>
+                        <li><a href="#services">Servicios</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                        <li><a>Ubicación</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     )

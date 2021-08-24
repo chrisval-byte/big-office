@@ -19,7 +19,7 @@ const Home = () => {
                         <div className="text-container">
                             <h1>NECESITAS RENOVAR TU MOBILIARIO</h1>
                         </div>
-                        <TextDecoration classSelected={1}/>
+                        <TextDecoration classSelected="first-title"/>
                         <div className="subtitle-container">
                             <h3>NOSOTROS LO ARREGLAMOS</h3>
                         </div>
@@ -39,12 +39,10 @@ const Home = () => {
                     </svg>
                 </div>
             </div>
-            <ServicesSection/>
+            <ServicesSection id="services"/>
             <OfferSection/>
-            <ContactSection/>
-            <AboutSection/>
-            <GallerySection/>
-            <Footer/>
+            <ContactSection id="contact"/>
+            <AboutSection id="about"/>
         </div>
     )
 }

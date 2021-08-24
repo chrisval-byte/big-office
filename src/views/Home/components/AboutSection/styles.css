@@ -4,17 +4,11 @@
 }
 
 .about-section{
-    background-color: #FED403;
     height: 100%;
     width: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-image: linear-gradient(to bottom, rgba(254, 212, 3, 0.5),
-    rgba(254, 212, 3, 0.5)),
-    url("/src/assets/images/about-image.jpeg");
-    background-repeat: no-repeat;
-    background-size: 100% 800px;
 }
 
 .desc-box{

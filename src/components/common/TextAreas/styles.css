@@ -1,19 +1,9 @@
 .message-box{
-    width: 80%;
-    margin-top: 20px;
     border-radius: 10px;
-    height: 70px;
-    font-size: 22px;
-    padding: 5px;
-}
-
-.send-button{
-    margin-top: 10px;
-    width: 82%;
-    height: 46px;
-    font-size: 24px;
-    color: white;
+    height: 150px;
+    font-size: 18px;
+    background-color: #E4E4E4;
     border: none;
-    border-radius: 10px;
-    font-weight: bold;
+    width: 100%;
+    resize: none;
 }

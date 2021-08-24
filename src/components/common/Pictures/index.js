@@ -1,28 +1,36 @@
 import "./styles.css"
-import "../TextDecor"
 import TextDecor from "../TextDecor";
 
-const Pictures = ({textSubtitle, text, className, image}) => {
+const Pictures = ({textSubtitle, text, image, width, height, marginBottom}) => {
     return(
-        <div>
-            <div className={className} style={{"backgroundImage": `url(${image})`}}/>
-            <h2 className="image-text">{textSubtitle}</h2>
-            <TextDecor classSelected={3}/>
-            {text ?
-                <div>
-                    <div className="description">
-                        <p>Lorem Ipsum is simply dummy text of the printing and
-                            typesetting industry. Lorem Ipsum has been the industry's standard
-                            dummy text ever since the 1500s, when an unknown printer took a
-                            galley of type and scrambled it to make a type specimen book. It
-                            has survived not only five centuries, but also the leap into electronic
-                            typesetting, remaining essentially unchanged. It was popularised in the
-                            1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                            and more recently with desktop publishing software like Aldus PageMaker
-                            including versions of Lorem Ipsum.</p>
-                    </div>
+        <div className="picture-container">
+            <div className="apply-border"
+                 style={{
+                     "backgroundImage": `url(${image})`,
+                     "backgroundColor": "#FED403",
+                     "width": width,
+                     "height": height,
+                     "marginBottom": marginBottom
+                 }}/>
+            <div style={{"display": "flex", "flexDirection": "column"}}>
+                <div className="picture-title">
+                    <h2>{textSubtitle}</h2>
+                    <TextDecor classSelected="min-picture"/>
                 </div>
-                : <br/>}
+                {text ?
+                    <div>
+                        <div className="description">
+                            <p>En nuestros servicios para sillas incluimos lo siguiente:
+                                <ul>
+                                    <li style={{"marginLeft": 40}}>Reparación de tapiceria</li>
+                                    <li style={{"marginLeft": 40}}>Reparación de rodos</li>
+                                </ul>
+                            </p>
+
+                        </div>
+                    </div>
+                    : <br/>}
+            </div>
         </div>
     )
 }

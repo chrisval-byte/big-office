@@ -1,10 +1,9 @@
 import "./style.css"
 
-const sectionTitles = ({text, withMargin}) => {
+const sectionTitles = ({text}) => {
     return(
-        <div className={withMargin ?
-            "title-container-margin" : "title-container-no-margin"}>
-            <h2 className="section-title">{text}</h2>
+        <div className="title-style">
+            <h2>{text}</h2>
         </div>
     )
 }

@@ -1,26 +1,25 @@
-.yellow-box-xl{
+.first-title{
     margin-bottom: 25px;
     width: 700px;
     background-color: #FED403;
-    height: 22px;
+    height: 18px;
     display: flex;
     border-radius: 15px;
 }
 
-.yellow-box-l{
-    margin-bottom: 25px;
-    width: 400px;
-    background-color: #FED403;
-    height: 22px;
-    display: flex;
-    border-radius: 15px;
-}
-
-.yellow-box-m{
-    margin-top: 5px;
-    width: 170px;
+.sub-title{
+    width: 130px;
     background-color: #FED403;
     height: 10px;
     display: flex;
-    border-radius: 15px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.min-picture{
+    width: 300px;
+    background-color: #FED403;
+    height: 7px;
+    display: flex;
+    margin-top: 10px;
 }

@@ -1,11 +1,10 @@
 import "./styles.css"
 import SectionTitles from "../../../../components/common/SectionTitles"
 import TextDecor from "../../../../components/common/TextDecor";
-import Pictures from "../../../../components/common/Pictures";
 
-const AboutSection = () => {
+const AboutSection = ({id}) => {
     return(
-        <div className="about-container">
+        <div className="about-container" id={id}>
             <div className="about-section">
                 <div className="desc-box">
                     <SectionTitles text="Nosotros"/>

@@ -1,33 +1,32 @@
 import "./styles.css"
-import {useState} from "react";
 import SectionTitle from "../../../../components/common/SectionTitles"
-import Picture from "../../../../components/common/Pictures"
-import SillasImage from "../../../../assets/images/sillas-image.png"
-import MueblesImage from "../../../../assets/images/muebles-image.jpeg"
-import ProyectosImage from "../../../../assets/images/proyectos-image.jpeg"
+import TextDecor from "../../../../components/common/TextDecor";
+import Pictures from "../../../../components/common/Pictures";
 
-const ServicesSection = () => {
-    const [showDesc, setShowDesc] = useState([false, false, false])
+const ServicesSection = ({id}) => {
     return(
-        <div className="service-container">
+        <div className="service-container" id={id}>
             <div className="service-section">
-                <div className="title-section">
-                    <SectionTitle text="Servicios"/>
-                    <h3 className="subtitle">Estas son las áreas en las que nos especializamos:</h3>
+                <div className="titles-service-section">
+                    <div className="title-service-section">
+                        <SectionTitle text="SER VI CIOS"/>
+                        <TextDecor classSelected="sub-title"/>
+                    </div>
+                    <h3 className="subtitle-service-section">
+                        Estas son las áreas en las que nos especializamos</h3>
+                    <button className="btn-cotizar">Cotizar</button>
                 </div>
-                <div className="picture-container">
-                    <Picture className="picture-class"
-                             textSubtitle="Sillas"
-                             image={SillasImage}
-                             text={showDesc[0]}/>
-                    <Picture className="picture-class"
-                             textSubtitle="Muebles"
-                             image={MueblesImage}
-                             text={showDesc[1]}/>
-                    <Picture className="picture-class"
-                             textSubtitle="Proyectos"
-                             image={ProyectosImage}
-                             text={showDesc[2]}/>
+                <div className="pictures-container">
+                    <Pictures textSubtitle="Sillas"
+                              width={366} height={445}
+                              marginBottom={20}
+                              text={true}
+                    />
+                    <Pictures textSubtitle="Muebles"
+                              width={366}
+                              height={445}
+                              text={true}
+                    />
                 </div>
             </div>
         </div>
