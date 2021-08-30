@@ -12,7 +12,7 @@ import Image from "../../assets/images/silla-image-section.png"
 const Home = () => {
     return (
         <div>
-            <Header/>
+            <Header withBackground={true}/>
             <div className="intro-container">
                 <div className="intro-section">
                     <div className="text-section">
@@ -43,6 +43,8 @@ const Home = () => {
             <OfferSection/>
             <ContactSection id="contact"/>
             <AboutSection id="about"/>
+            <GallerySection/>
+            <Footer/>
         </div>
     )
 }

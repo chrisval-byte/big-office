@@ -1,5 +1,6 @@
 .input-box{
-    width: 224px;
+    max-width: 224px;
+    min-width: 214px;
     height: 54px;
     background-color: #E4E4E4;
     border: none;
