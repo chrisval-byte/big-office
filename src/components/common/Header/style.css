@@ -20,7 +20,7 @@
 }
 
 .header-section h1{
-    color: white;
+    color: #ffffff;
     font-size: 40px;
 }
 
@@ -74,4 +74,88 @@ ul{
 .list-links p:hover{
     text-decoration-line: underline;
     text-decoration-color: #FED403;
+}
+
+@media screen and (min-width: 992px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .header-container-with-background{
+        color: #fff;
+        background: black;
+        padding: 30px 80px 30px 40px;
+    }
+
+    .header-section-with-background{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 12px;
+    }
+
+    .list-links-with-background{
+        display: flex;
+        justify-content: space-between;
+        width: 320px;
+    }
+
+    .list-links-with-background a{
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    .list-links-with-background a:hover{
+        cursor: pointer;
+        color: #FED403;
+    }
+
+    .header-container-without-background{
+        position: absolute;
+        color: #fff;
+        width: 90%;
+        margin-left: 40px;
+        margin-top: 30px;
+    }
+
+    .header-section-without-background{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 12px;
+    }
+
+    .list-links-without-background{
+        display: flex;
+        justify-content: space-between;
+        width: 320px;
+    }
+
+    .list-links-without-background a{
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    .list-links-without-background a:hover{
+        cursor: pointer;
+        color: #FED403;
+    }
+
+    ul{
+        list-style-type: none;
+    }
+
+    .list-links a{
+        color: white;
+        text-decoration: none;
+        font-size: 22px;
+    }
+
+    .list-links p:hover{
+        text-decoration-line: underline;
+        text-decoration-color: #FED403;
+    }
 }

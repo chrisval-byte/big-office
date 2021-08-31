@@ -1,16 +1,15 @@
 .first-title{
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     width: 700px;
     background-color: #FED403;
-    height: 18px;
+    height: 5px;
     display: flex;
-    border-radius: 15px;
 }
 
-.sub-title{
-    width: 130px;
+.subtitle{
+    width: 95px;
     background-color: #FED403;
-    height: 10px;
+    height: 5px;
     display: flex;
     margin-bottom: 10px;
     margin-top: 20px;

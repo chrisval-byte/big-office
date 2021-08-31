@@ -4,15 +4,14 @@ const Header = ({withBackground}) => {
     return (
         <div>
             {withBackground ?
-                <div className="header-container">
-                    <div className="header-section">
+                <div className="header-container-with-background">
+                    <div className="header-section-with-background">
                         <h1>Big Office</h1>
                         <div>
-                            <ul className="list-links">
-                                <li><a href="#services">Servicios</a></li>
+                            <ul className="list-links-with-background">
                                 <li><a href="#contact">Contacto</a></li>
-                                <li><a href="#about">Nosotros</a></li>
                                 <li><a>Ubicación</a></li>
+                                <li><a>Nosotros</a></li>
                             </ul>
                         </div>
                     </div>

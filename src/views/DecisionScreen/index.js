@@ -7,8 +7,8 @@ import ReparacionImage from "../../assets/images/reparacion.jpeg"
 const DecisionScreen = () => {
     return(
         <div className="decision-container">
+            <Header/>
             <div className="decision-section">
-                <Header/>
                 <div className="title-decision-section" style={{
                     "backgroundImage": `linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
                     url(${MobiliarioImage})`
@@ -20,8 +20,15 @@ const DecisionScreen = () => {
                     "backgroundImage": `linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
                     url(${ReparacionImage})`
                 }}>
-                    <h1>Reparación de mobiliario</h1>
+                    <h1>Mantenimiento para interiores</h1>
                     <Link className="boton-ir">Ver más</Link>
+                </div>
+                <div className="title-decision-section" style={{
+                    "backgroundImage": `linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+                    url(${ReparacionImage})`
+                }}>
+                    <h1>Reparación de mobiliario</h1>
+                    <Link className="boton-ir" to="/reparaciones">Ver más</Link>
                 </div>
             </div>
         </div>

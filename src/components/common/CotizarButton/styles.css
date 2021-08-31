@@ -1,0 +1,10 @@
+.cotizar-btn{
+    width: 130px;
+    height: 40px;
+    background: #fed403;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}

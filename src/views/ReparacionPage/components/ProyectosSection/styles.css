@@ -1,0 +1,27 @@
+@media screen and (min-width: 992px){
+    .projects-container{
+        width: 100%;
+        height: 900px;
+        background: #FAFAFA;
+        display: flex;
+        justify-content: center;
+    }
+
+    .projects-section{
+        width: 80%;
+    }
+
+    .title-project{
+        font-size: 58px;
+        font-weight: lighter;
+    }
+
+    .projects-title{
+        margin-top: 50px;
+    }
+
+    .desc-project{
+        margin-top: 30px;
+        width: 350px;
+    }
+}
