@@ -1,4 +1,25 @@
-@media screen and (min-width: 992px){
+@media screen and (min-width: 1200px){
+    .image-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-container h3{
+        margin-bottom: 14px;
+        font-weight: lighter;
+        color: white;
+        font-size: 24px;
+    }
+
+    .image-box{
+        width: 480px;
+        height: 500px;
+        background: #fed403;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
     .image-container{
         display: flex;
         flex-direction: column;
