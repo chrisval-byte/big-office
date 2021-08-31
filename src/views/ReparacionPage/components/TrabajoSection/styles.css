@@ -1,0 +1,51 @@
+@media only screen and (min-width: 1200px) and (max-width: 1399px){
+    .work-container{
+        background-color: #FAFAFA;
+        width: 100%;
+        height: 800px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 50px;
+    }
+
+    .work-section{
+        display: flex;
+        width: 80%;
+        height: 90%;
+    }
+
+    .process-section{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        height: 100%;
+        justify-content: space-between;
+    }
+
+    .process-box{
+        width: 80%;
+        height: 200px;
+        background-color: #fed403;
+    }
+
+    .work-titles-box{
+        width: 30%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .work-title{
+        font-size: 56px;
+        font-weight: lighter;
+        margin-bottom: 20px;
+    }
+
+    .work-desc{
+        font-size: 20px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+}

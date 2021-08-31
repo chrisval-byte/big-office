@@ -1,0 +1,39 @@
+@media only screen and (min-width: 1200px) and (max-width: 1399px){
+    .offer-container{
+        background-color: #FAFAFA;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 100px;
+    }
+
+    .offer-section{
+        width: 80%;
+    }
+
+    .offer-title{
+        display: flex;
+        justify-content: center;
+    }
+
+    .offer-title h1{
+        width: 30%;
+        font-size: 56px;
+        font-weight: lighter;
+    }
+
+    .offer-title p{
+        font-size: 20px;
+        width: 37%;
+        margin-top: 30px;
+    }
+
+    .icons-offer-section{
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin-top: 60px;
+        justify-content: space-between;
+    }
+}

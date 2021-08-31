@@ -1,4 +1,52 @@
-@media screen and (min-width: 992px){
+@media screen and (min-width: 1200px) and (max-width: 1399px){
+    .projects-container{
+        width: 100%;
+        height: 900px;
+        background: #FAFAFA;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 100px;
+    }
+
+    .projects-section{
+        width: 80%;
+    }
+
+    .title-project{
+        font-size: 56px;
+        font-weight: lighter;
+    }
+
+    .projects-title{
+        margin-top: 50px;
+    }
+
+    .projects-title p{
+        font-size: 20px;
+    }
+
+    .desc-project{
+        margin-top: 30px;
+        width: 350px;
+        font-size: 20px;
+    }
+
+    .carousel-section{
+        height: 70%;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .images-gallery{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
     .projects-container{
         width: 100%;
         height: 900px;

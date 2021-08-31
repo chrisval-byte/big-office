@@ -1,8 +1,9 @@
-@media screen and (min-width: 1200px){
+@media only screen and (min-width: 1400px){
     .image-container{
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 33%;
     }
 
     .image-container h3{
@@ -13,13 +14,37 @@
     }
 
     .image-box{
-        width: 480px;
-        height: 500px;
+        display: flex;
+        width: 100%;
+        height: 450px;
         background: #fed403;
     }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1199px){
+@media only screen and (min-width: 1200px) and (max-width: 1399px){
+    .image-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 32%;
+    }
+
+    .image-container h3{
+        margin-bottom: 14px;
+        font-weight: lighter;
+        color: white;
+        font-size: 20px;
+    }
+
+    .image-box{
+        display: flex;
+        width: 100%;
+        height: 400px;
+        background: #fed403;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px){
     .image-container{
         display: flex;
         flex-direction: column;

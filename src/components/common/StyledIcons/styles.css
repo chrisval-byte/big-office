@@ -1,26 +1,26 @@
-.styled-icon{
-    display: flex;
-    align-items: center;
-}
+@media only screen and (min-width: 1200px) and (max-width: 1399px){
+    .styled-icon{
+        display: flex;
+        align-items: center;
+    }
 
-.icon-s{
-    font-size: 50px;
-    border-radius: 50%;
-}
+    .icon-s{
+        font-size: 50px;
+        border-radius: 50%;
+    }
 
-.icon-l{
-    font-size: 100px;
-    margin-bottom: 30px;
-}
+    .icon-l{
+        font-size: 100px;
+        margin-bottom: 30px;
+    }
 
-.icon-text{
-    font-size: 30px;
-    font-weight: bold;
-    margin-left: 20px;
-}
+    .icon-text{
+        font-size: 24px;
+    }
 
-.messages-container{
-    display: flex;
-    flex-direction: column;
+    .messages-container{
+        display: flex;
+        flex-direction: column;
+    }
 }
 

@@ -1,5 +1,7 @@
 import "./styles.css"
 import TextDecor from "../../../../components/common/TextDecor";
+import ImageProject from "../../../../components/specific/ImageProject";
+import ImageForProjects from "../../../../components/specific/ImageForProjects";
 
 const ProjectsSection = () => {
     return(
@@ -13,8 +15,16 @@ const ProjectsSection = () => {
                         proyectos donde hemos trabajado.</p>
                 </div>
                 <div className="carousel-section">
-                    <div>
-
+                    <ImageProject title="Proyecto 1 ejemplo"
+                                  subtitle="Este fue un proyecto realizado"/>
+                    <div className="images-gallery">
+                        <ImageForProjects/>
+                        <ImageForProjects/>
+                        <ImageForProjects/>
+                        <ImageForProjects/>
+                        <ImageForProjects/>
+                        <ImageForProjects/>
+                        <ImageForProjects/>
                     </div>
                 </div>
             </div>

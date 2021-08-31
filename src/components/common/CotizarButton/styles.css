@@ -1,10 +1,10 @@
-.cotizar-btn{
-    width: 130px;
-    height: 40px;
-    background: #fed403;
-    color: black;
-    border: none;
-    border-radius: 5px;
-    font-size: 20px;
-    font-weight: bold;
+@media only screen and (min-width: 1200px) and (max-width: 1399px){
+    .cotizar-btn{
+        background: #fed403;
+        color: black;
+        border: none;
+        border-radius: 5px;
+        font-size: 20px;
+        font-weight: bold;
+    }
 }

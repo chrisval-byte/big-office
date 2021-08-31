@@ -16,7 +16,7 @@ const IntroSection = () => {
                     <h1 className="title-rep">Necesitas renovar tu mobiliario</h1>
                     <TextDecor classSelected="first-title"/>
                     <h4 className="subtitle-rep">Nosotros lo arreglamos y lo dejamos como nuevo.</h4>
-                    <CotizarButton/>
+                    <CotizarButton size="md"/>
                 </div>
             </div>
         </div>

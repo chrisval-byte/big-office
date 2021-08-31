@@ -3,7 +3,6 @@ import Header from "../../components/common/Header"
 import ServicesSection from "./components/ServicesSection"
 import ContactSection from "./components/ContactSection";
 import TextDecoration from "../../components/common/TextDecor"
-import OfferSection from "./components/OfferSection";
 import AboutSection from "./components/AboutSection";
 import GallerySection from "./components/GallerySection";
 import Footer from "../../components/common/Footer";
@@ -40,7 +39,6 @@ const Home = () => {
                 </div>
             </div>
             <ServicesSection id="services"/>
-            <OfferSection/>
             <ContactSection id="contact"/>
             <AboutSection id="about"/>
             <GallerySection/>
