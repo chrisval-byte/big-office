@@ -5,7 +5,7 @@
         background: #FAFAFA;
         display: flex;
         justify-content: center;
-        padding-bottom: 100px;
+        padding-bottom: 80px;
     }
 
     .projects-section{
@@ -23,12 +23,8 @@
 
     .projects-title p{
         font-size: 20px;
-    }
-
-    .desc-project{
         margin-top: 30px;
         width: 350px;
-        font-size: 20px;
     }
 
     .carousel-section{

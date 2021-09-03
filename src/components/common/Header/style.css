@@ -1,161 +1,64 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
-.header-container{
-    background-color: black;
-    height: 100px;
-    width: 100%;
-    padding-top: 25px;
-    display: flex;
-    justify-content: center;
-}
-
-.header-section{
-    width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.header-section h1{
-    color: #ffffff;
-    font-size: 40px;
-}
-
-.list-links{
-    display: flex;
-    justify-content: space-between;
-    width: 500px;
-}
-
-.header-container-without-background{
-    position: absolute;
-    color: #fff;
-    width: 90%;
-    margin-left: 100px;
-    margin-top: 40px;
-}
-
-.header-section-without-background{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.list-links-without-background{
-    display: flex;
-    justify-content: space-between;
-    width: 400px;
-}
-
-.list-links-without-background a{
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-.list-links-without-background a:hover{
-    cursor: pointer;
-    color: #FED403;
-}
-
-ul{
-    list-style-type: none;
-}
-
-.list-links a{
-    color: white;
-    text-decoration: none;
-    font-size: 22px;
-}
-
-.list-links p:hover{
-    text-decoration-line: underline;
-    text-decoration-color: #FED403;
-}
-
-@media screen and (min-width: 992px){
+@media only screen and (min-width: 1200px) and (max-width: 1399px){
     *{
         margin: 0;
         padding: 0;
     }
 
-    .header-container-with-background{
-        color: #fff;
-        background: black;
-        padding: 30px 80px 30px 40px;
+    .header-container{
+        width: 100%;
+        height: 90px;
+        padding-bottom: 10px;
+        display: flex;
+        justify-content: center;
     }
 
-    .header-section-with-background{
+    .header-section{
+        width: 80%;
         display: flex;
+        justify-content: space-between;
         align-items: center;
-        justify-content: space-between;
-        font-size: 12px;
     }
 
-    .list-links-with-background{
+    .title-header{
+        width: 20%;
+    }
+
+    .title-header h1{
+        font-size: 22px;
+    }
+
+    .links-header{
+        width: 35%;
+    }
+
+    .link-list{
         display: flex;
         justify-content: space-between;
-        width: 320px;
-    }
-
-    .list-links-with-background a{
-        color: white;
-        text-decoration: none;
-        font-size: 16px;
-    }
-
-    .list-links-with-background a:hover{
-        cursor: pointer;
-        color: #FED403;
-    }
-
-    .header-container-without-background{
-        position: absolute;
-        color: #fff;
-        width: 90%;
-        margin-left: 40px;
-        margin-top: 30px;
-    }
-
-    .header-section-without-background{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        font-size: 12px;
-    }
-
-    .list-links-without-background{
-        display: flex;
-        justify-content: space-between;
-        width: 320px;
-    }
-
-    .list-links-without-background a{
-        color: white;
-        text-decoration: none;
-        font-size: 16px;
-    }
-
-    .list-links-without-background a:hover{
-        cursor: pointer;
-        color: #FED403;
     }
 
     ul{
         list-style-type: none;
     }
 
-    .list-links a{
-        color: white;
+    .link{
         text-decoration: none;
-        font-size: 22px;
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
     }
 
-    .list-links p:hover{
-        text-decoration-line: underline;
-        text-decoration-color: #FED403;
+    .link:hover{
+        color: #fed403;
+    }
+
+    .link-white{
+        text-decoration: none;
+        font-size: 15px;
+        color: black;
+        font-weight: bold;
+    }
+
+    .link-white:hover{
+        color: #fed403;
     }
 }

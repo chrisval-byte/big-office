@@ -14,7 +14,7 @@ const DecisionScreen = () => {
                     url(${MobiliarioImage})`
                 }}>
                     <h1>Fabricación de mobiliario</h1>
-                    <Link className="boton-ir" to="/home">Ver más</Link>
+                    <Link className="boton-ir" to="/fabricaciones">Ver más</Link>
                 </div>
                 <div className="title-decision-section" style={{
                     "backgroundImage": `linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),

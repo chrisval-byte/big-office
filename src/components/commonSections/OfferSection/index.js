@@ -1,7 +1,7 @@
 import "./styles.css"
 import TextDecor from "../../common/TextDecor";
 import StyledIcon from "../../common/StyledIcons";
-import {faWhatsapp} from "@fortawesome/free-brands-svg-icons";
+import {faMedal, faCoins, faHandshake, faUserCheck} from "@fortawesome/free-solid-svg-icons";
 
 const OfferSection = () => {
     return(
@@ -19,25 +19,25 @@ const OfferSection = () => {
                                 text="Excelente calidad"
                                 iconColor="#fed403"
                                 flexDirection="column"
-                                iconName={faWhatsapp}/>
+                                iconName={faMedal}/>
                     <StyledIcon className="icon-l"
                                 haveText={true}
                                 text="Confianza"
                                 iconColor="#fed403"
                                 flexDirection="column"
-                                iconName={faWhatsapp}/>
+                                iconName={faUserCheck}/>
                     <StyledIcon className="icon-l"
                                 haveText={true}
                                 text="Precios justos"
                                 iconColor="#fed403"
                                 flexDirection="column"
-                                iconName={faWhatsapp}/>
+                                iconName={faCoins}/>
                     <StyledIcon className="icon-l"
                                 haveText={true}
                                 text="Buena relación"
                                 iconColor="#fed403"
                                 flexDirection="column"
-                                iconName={faWhatsapp}/>
+                                iconName={faHandshake}/>
                 </div>
             </div>
         </div>

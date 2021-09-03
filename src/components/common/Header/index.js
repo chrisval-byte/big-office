@@ -1,35 +1,31 @@
 import "./style.css"
+import {Link} from "react-router-dom";
 
-const Header = ({withBackground}) => {
+const Header = ({withBackground, colorBlack}) => {
     return (
         <div>
-            {withBackground ?
-                <div className="header-container-with-background">
-                    <div className="header-section-with-background">
+            <div className="header-container"
+                 style={withBackground && colorBlack?
+                     {position: "relative", backgroundColor: "black", color: "white"}
+                     :
+                     withBackground && !colorBlack ?
+                         {position: "relative", color: "black", backgroundColor: "#FAFAFA"}
+                         :
+                     {position: "absolute", color: "white"}}
+            >
+                <div className="header-section">
+                    <div className="title-header">
                         <h1>Big Office</h1>
-                        <div>
-                            <ul className="list-links-with-background">
-                                <li><a href="#contact">Contacto</a></li>
-                                <li><a>Ubicación</a></li>
-                                <li><a>Nosotros</a></li>
-                            </ul>
-                        </div>
+                    </div>
+                    <div className="links-header">
+                        <ul className="link-list">
+                            <li><Link to="/contacto" className={colorBlack ? "link" : "link-white"}>Contacto</Link></li>
+                            <li><Link to="/ubicacion" className={colorBlack ? "link" : "link-white"}>Ubicación</Link></li>
+                            <li><Link to="/nosotros" className={colorBlack ? "link" : "link-white"}>Nosotros</Link></li>
+                        </ul>
                     </div>
                 </div>
-                :
-                <div className="header-container-without-background">
-                    <div className="header-section-without-background">
-                        <h1>Big Office</h1>
-                        <div>
-                            <ul className="list-links-without-background">
-                                <li><a href="#contact">Contacto</a></li>
-                                <li><a>Ubicación</a></li>
-                                <li><a>Nosotros</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            }
+            </div>
         </div>
     )
 }

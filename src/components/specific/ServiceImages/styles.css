@@ -1,0 +1,23 @@
+@media only screen and (min-width: 1200px) and (max-width: 1399px){
+    .service-image-container{
+        display: flex;
+    }
+
+    .service-image{
+        width: 310px;
+        height: 365px;
+        background-color: #fed403;
+    }
+
+    .image-service-desc{
+        padding-left: 10px;
+    }
+
+    .image-service-desc h2{
+        font-size: 28px;
+    }
+
+    .image-service-desc p{
+        font-size: 18px;
+    }
+}

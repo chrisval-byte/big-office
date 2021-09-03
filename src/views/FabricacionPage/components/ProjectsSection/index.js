@@ -18,13 +18,13 @@ const ProjectsSection = () => {
                     <ImageProject title="Proyecto 1 ejemplo"
                                   subtitle="Este fue un proyecto realizado"/>
                     <div className="images-gallery">
-                        <ImageForProjects/>
-                        <ImageForProjects/>
-                        <ImageForProjects/>
-                        <ImageForProjects/>
-                        <ImageForProjects/>
-                        <ImageForProjects/>
-                        <ImageForProjects/>
+                        <ImageForProjects section="fab"/>
+                        <ImageForProjects section="fab"/>
+                        <ImageForProjects section="fab"/>
+                        <ImageForProjects section="fab"/>
+                        <ImageForProjects section="fab"/>
+                        <ImageForProjects section="fab"/>
+                        <ImageForProjects section="fab"/>
                     </div>
                 </div>
             </div>

@@ -1,8 +1,8 @@
 import "./styles.css"
 
-const ImageForProjects = () => {
+const ImageForProjects = ({section}) => {
     return(
-        <div className="image-gallery"/>
+        <div className={section === "fab" ? "fab-gallery" : "rep-gallery"}/>
     )
 }
 
