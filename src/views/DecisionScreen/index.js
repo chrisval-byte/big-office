@@ -1,34 +1,22 @@
 import "./styles.css"
-import {Link} from "react-router-dom";
 import Header from "../../components/common/Header";
-import MobiliarioImage from "../../assets/images/mobiliario.jpeg"
-import ReparacionImage from "../../assets/images/reparacion.jpeg"
+import IntroBox from "../../components/common/IntroBox";
 
 const DecisionScreen = () => {
     return(
-        <div className="decision-container">
-            <Header/>
-            <div className="decision-section">
-                <div className="title-decision-section" style={{
-                    "backgroundImage": `linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
-                    url(${MobiliarioImage})`
-                }}>
-                    <h1>Fabricación de mobiliario</h1>
-                    <Link className="boton-ir" to="/fabricaciones">Ver más</Link>
-                </div>
-                <div className="title-decision-section" style={{
-                    "backgroundImage": `linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-                    url(${ReparacionImage})`
-                }}>
-                    <h1>Mantenimiento para interiores</h1>
-                    <Link className="boton-ir">Ver más</Link>
-                </div>
-                <div className="title-decision-section" style={{
-                    "backgroundImage": `linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-                    url(${ReparacionImage})`
-                }}>
-                    <h1>Reparación de mobiliario</h1>
-                    <Link className="boton-ir" to="/reparaciones">Ver más</Link>
+        <div>
+            <Header colorBlack={true}/>
+            <div className="decision-container">
+                <div className="decision-section">
+                    <div className="intro-boxes">
+                        <IntroBox text={"Fabricación mobiliario"} to={"/fabricaciones"}/>
+                        <IntroBox text={"Reparación mobiliario"} marginTop={50} to={"/reparaciones"}/>
+                        <IntroBox text={"Mantenimiento interiores y exteriores"} to={"/fabricaciones"}/>
+                    </div>
+                    <div className="intro-text">
+                        <h1>F A B R I C A C I O N</h1>
+                        <h3>de mobiliario.</h3>
+                    </div>
                 </div>
             </div>
         </div>

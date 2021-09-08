@@ -3,9 +3,25 @@ import {useState} from "react";
 import StyledIcon from "../../common/StyledIcons";
 import {faWhatsapp, faFacebook} from "@fortawesome/free-brands-svg-icons"
 import {faEnvelope} from "@fortawesome/fontawesome-free-solid"
+import db from "../../../database"
 
 const Form = () => {
     const [iconSelected, setIconSelected] = useState("Facebook")
+    const [name, setName] = useState("")
+    const [lastName, setLastName] = useState("")
+    const [phone, setPhone] = useState("")
+    const [email, setEmail] = useState("")
+
+    const sendInfo = (e) => {
+        e.preventDefault()
+        db.collection("clients").add({
+            "name": name,
+            "lastName": lastName,
+            "phone": phone,
+            "email": email
+        }).then(() => console.log("Se agregaron los datos")).catch((e) => console.log("No se pudo:", e))
+    }
+
     return(
         <form className="form">
             <h1>Envianos un mensaje</h1>
@@ -33,15 +49,20 @@ const Form = () => {
             </p>
             <div className="inputs-container">
                 <div className="input-container">
-                    <input placeholder="Nombre:"/>
-                    <input placeholder="Apellidos:"/>
+                    <input placeholder="Nombre:"
+                           onChange={(e) => setName(e.target.value)}/>
+                    <input placeholder="Apellidos:"
+                           onChange={(e) => setLastName(e.target.value)}/>
                 </div>
                 <div className="input-container">
-                    <input placeholder="Teléfono:"/>
-                    <input placeholder="Correo:"/>
+                    <input placeholder="Teléfono:"
+                           onChange={(e) => setPhone(e.target.value)}/>
+                    <input placeholder="Correo:"
+                           onChange={(e) => setEmail(e.target.value)}/>
                 </div>
                 <textarea className="area" maxLength={300}/>
                 <button className="send-button"
+                        onClick={(e) => sendInfo(e)}
                         style={iconSelected === "Whatsapp" ?
                             {backgroundColor : "#15AC31"} :
                             iconSelected === "correo" ?

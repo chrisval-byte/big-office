@@ -2,6 +2,7 @@ import "./styles.css"
 import Header from "../../common/Header";
 import TextDecor from "../../common/TextDecor";
 import Form from "../../specific/Form";
+import CallBox from "../../specific/CallBox";
 
 const ContactSection = () => {
     return(
@@ -19,6 +20,7 @@ const ContactSection = () => {
                             Sera un gusto poder atenderte</p>
                         <br/>
                         <p>Tambien puedes llamarnos:</p>
+                        <CallBox/>
                     </div>
                 </div>
             </div>

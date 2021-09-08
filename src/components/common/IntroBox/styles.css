@@ -1,0 +1,39 @@
+@media only screen and (min-width: 1200px) and (max-width: 1399px){
+    .intro-box-container{
+        width: 32%;
+        height: 92%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+
+    .intro-box-shadow{
+        background-color: #fed403;
+        position: absolute;
+        width: 24%;
+        height: 54%;
+    }
+
+    .intro-box{
+        background-color: #FFF7CE;
+        position: absolute;
+        width: 24%;
+        height: 54%;
+        display: flex;
+        align-self: flex-start;
+        margin-right: 20px;
+        align-items: flex-end;
+        text-decoration: none;
+        color: black;
+    }
+
+    .intro-box h2{
+        margin-left: 20px;
+        width: 88%;
+        display: flex;
+        font-weight: lighter;
+        font-size: 30px;
+        align-items: flex-end;
+        margin-bottom: 20px;
+    }
+}

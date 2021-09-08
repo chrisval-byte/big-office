@@ -1,0 +1,71 @@
+@media only screen and (min-width: 1200px) and (max-width: 1399px){
+    .access-container{
+        width: 100%;
+        background-color: #E4E4E4;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .access-section{
+        width: 30%;
+        height: 70%;
+        background-color: #FFFFFF;
+        border: none;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 30px;
+    }
+
+    .access-section-inputs{
+        display: flex;
+        flex-direction: column;
+        height: 100px;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+
+    .access-section h2{
+        font-size: 34px;
+        margin-bottom: 20px;
+    }
+
+    .access-section p{
+        font-size: 16px;
+        margin-bottom: 50px;
+    }
+
+    .access-section button{
+        border: none;
+        border-radius: 5px;
+        height: 45px;
+        font-size: 18px;
+        background-color: #fed403;
+        margin-bottom: 20px;
+    }
+
+    .input-access{
+        border: 1px solid #dadada;
+        border-radius: 5px;
+        height: 40px;
+        padding-left: 10px;
+        font-size: 16px;
+        background-color: #E4E4E4;
+    }
+
+    .save-box{
+        display: flex;
+        justify-content: center;
+        height: 20px;
+        width: 100%;
+    }
+
+    .save-box input{
+        margin-right: 10px;
+        height: 18px;
+    }
+}

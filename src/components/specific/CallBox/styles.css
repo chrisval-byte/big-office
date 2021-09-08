@@ -1,0 +1,20 @@
+@media only screen and (min-width: 1200px) and (max-width: 1399px){
+    .callbox-container{
+        width: 85%;
+        height: 80px;
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+        margin-top: 20px;
+    }
+
+    .callbox-section{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 30px;
+    }
+}

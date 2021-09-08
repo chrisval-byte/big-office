@@ -11,17 +11,41 @@ const Header = ({withBackground, colorBlack}) => {
                      withBackground && !colorBlack ?
                          {position: "relative", color: "black", backgroundColor: "#FAFAFA"}
                          :
+                         colorBlack?
+                         {position: "absolute", color: "black"}:
                      {position: "absolute", color: "white"}}
             >
                 <div className="header-section">
                     <div className="title-header">
-                        <h1>Big Office</h1>
+                        <Link className="title-header-link"
+                              style={withBackground && colorBlack ? {color: "white"}
+                                  : withBackground && !colorBlack ? {color: "black"}
+                                      : colorBlack? {color: "black"}: {color: "white"}}
+                              to={"/"}>Big Office</Link>
                     </div>
                     <div className="links-header">
                         <ul className="link-list">
-                            <li><Link to="/contacto" className={colorBlack ? "link" : "link-white"}>Contacto</Link></li>
-                            <li><Link to="/ubicacion" className={colorBlack ? "link" : "link-white"}>Ubicación</Link></li>
-                            <li><Link to="/nosotros" className={colorBlack ? "link" : "link-white"}>Nosotros</Link></li>
+                            <li>
+                                <Link to="/contacto"
+                                      className={withBackground && colorBlack ? "link"
+                                          : withBackground && !colorBlack ? "link-white" :
+                                              colorBlack ? "link-absolute-color-black"
+                                              : "link-white-color-black"}>Contacto</Link>
+                            </li>
+                            <li>
+                                <Link to="/ubicacion"
+                                      className={withBackground && colorBlack ? "link"
+                                    : withBackground && !colorBlack ? "link-white" :
+                                              colorBlack ? "link-absolute-color-black"
+                                        : "link-white-color-black"}>Ubicación</Link>
+                            </li>
+                            <li>
+                                <Link to="/nosotros"
+                                      className={withBackground && colorBlack ? "link"
+                                    : withBackground && !colorBlack ? "link-white" :
+                                              colorBlack ? "link-absolute-color-black"
+                                        : "link-white-color-black"}>Nosotros</Link>
+                            </li>
                         </ul>
                     </div>
                 </div>

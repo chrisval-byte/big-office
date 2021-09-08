@@ -5,5 +5,9 @@
         border: none;
         border-radius: 5px;
         font-weight: bold;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }

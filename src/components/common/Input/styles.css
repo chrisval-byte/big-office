@@ -1,21 +1,23 @@
-.input-box{
-    max-width: 224px;
-    min-width: 214px;
-    height: 54px;
-    background-color: #E4E4E4;
-    border: none;
-    border-radius: 10px;
-    padding-left: 10px;
-    font-size: 18px;
-}
+@media only screen and (min-width: 1200px) and (max-width: 1399px){
+    .input-box{
+        max-width: 224px;
+        min-width: 214px;
+        height: 54px;
+        background-color: #E4E4E4;
+        border: none;
+        border-radius: 10px;
+        padding-left: 10px;
+        font-size: 18px;
+    }
 
-.input-message{
-    width: 98%;
-    height: 150px;
-    background-color: #E4E4E4;
-    border: none;
-    border-radius: 10px;
-    padding-left: 10px;
-    padding-top: 0;
-    font-size: 18px;
+    .input-message{
+        width: 98%;
+        height: 150px;
+        background-color: #E4E4E4;
+        border: none;
+        border-radius: 10px;
+        padding-left: 10px;
+        padding-top: 0;
+        font-size: 18px;
+    }
 }

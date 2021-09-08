@@ -23,8 +23,10 @@
         width: 20%;
     }
 
-    .title-header h1{
-        font-size: 22px;
+    .title-header-link{
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
     }
 
     .links-header{
@@ -42,8 +44,8 @@
 
     .link{
         text-decoration: none;
-        color: white;
         font-size: 15px;
+        color: white;
         font-weight: bold;
     }
 
@@ -54,11 +56,33 @@
     .link-white{
         text-decoration: none;
         font-size: 15px;
-        color: white;
+        color: #000000;
         font-weight: bold;
     }
 
     .link-white:hover{
+        color: #fed403;
+    }
+
+    .link-white-color-black{
+        text-decoration: none;
+        font-size: 15px;
+        color: #ffffff;
+        font-weight: bold;
+    }
+
+    .link-white-color-black:hover{
+        color: #fed403;
+    }
+
+    .link-absolute-color-black{
+        text-decoration: none;
+        font-size: 15px;
+        color: #000000;
+        font-weight: bold;
+    }
+
+    .link-absolute-color-black:hover{
         color: #fed403;
     }
 }
