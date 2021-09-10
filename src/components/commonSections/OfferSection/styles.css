@@ -1,39 +1,115 @@
-@media only screen and (min-width: 1200px) and (max-width: 1399px){
-    .offer-container{
-        background-color: #FAFAFA;
-        width: 100%;
-        height: auto;
-        display: flex;
-        justify-content: center;
-        padding-bottom: 100px;
-    }
+.offer-container{
+    background-color: #FAFAFA;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+}
 
-    .offer-section{
-        width: 80%;
-    }
+.offer-section{
+    width: 80%;
+}
 
-    .offer-title{
-        display: flex;
-        justify-content: center;
-    }
+.offer-title{
+    display: flex;
+    justify-content: center;
+}
 
-    .offer-title h1{
+.offer-title h1{
+    width: 30%;
+    font-size: 56px;
+    font-weight: lighter;
+}
+
+.offer-title p{
+    font-size: 20px;
+    width: 37%;
+    margin-top: 30px;
+    text-align: start;
+}
+
+.icons-offer-section{
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-top: 80px;
+    justify-content: space-between;
+}
+
+@media only screen and (min-width: 1700px){
+    .offer-title p{
+        margin-top: 10px;
         width: 30%;
-        font-size: 56px;
-        font-weight: lighter;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .offer-title h1{
+        font-size: 50px;
     }
 
     .offer-title p{
-        font-size: 20px;
-        width: 37%;
-        margin-top: 30px;
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px){
+    .offer-title h1{
+        font-size: 40px;
+        margin-right: 30px;
+    }
+
+    .offer-title p{
+        margin-top: 20px;
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 330px) and (max-width: 575px){
+    .offer-title{
+        flex-direction: column;
+    }
+
+    .offer-title h1{
+        width: 100%;
+        font-size: 38px;
+        text-align: center;
+    }
+
+    .offer-title p{
+        margin-top: 20px;
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
     }
 
     .icons-offer-section{
-        display: flex;
+        margin-top: 40px;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 329px){
+    .offer-title{
+        flex-direction: column;
+    }
+
+    .offer-title h1{
         width: 100%;
-        height: auto;
-        margin-top: 80px;
-        justify-content: space-between;
+        font-size: 38px;
+        text-align: center;
+    }
+
+    .offer-title p{
+        margin-top: 20px;
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .icons-offer-section{
+        margin-top: 40px;
+        flex-direction: column;
     }
 }

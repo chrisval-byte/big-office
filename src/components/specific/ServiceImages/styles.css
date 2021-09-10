@@ -1,23 +1,125 @@
-@media only screen and (min-width: 1200px) and (max-width: 1399px){
-    .service-image-container{
-        display: flex;
-    }
+.service-image-container{
+    display: flex;
+}
 
+.service-image{
+    width: 310px;
+    height: 365px;
+    background-color: #fed403;
+}
+
+.image-service-desc{
+    padding-left: 10px;
+}
+
+.image-service-desc h2{
+    font-size: 28px;
+}
+
+.image-service-desc p{
+    font-size: 18px;
+}
+
+@media only screen and (min-width: 2000px){
     .service-image{
         width: 310px;
-        height: 365px;
-        background-color: #fed403;
+        height: 500px;
     }
+}
 
-    .image-service-desc{
-        padding-left: 10px;
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+    .service-image{
+        width: 290px;
+        height: 365px;
     }
 
     .image-service-desc h2{
-        font-size: 28px;
+        font-size: 26px;
+    }
+
+    .image-service-desc p{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .service-image-container{
+        display: flex;
+        height: 100%;
+    }
+
+    .service-image{
+        width: 45%;
+        height: 98%;
+    }
+
+    .image-service-desc h2{
+        font-size: 24px;
+    }
+
+    .image-service-desc p{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px){
+    .service-image-container{
+        display: flex;
+        height: 100%;
+    }
+
+    .service-image{
+        width: 45%;
+        height: 98%;
+    }
+
+    .image-service-desc h2{
+        font-size: 22px;
+    }
+
+    .image-service-desc p{
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 330px) and (max-width: 575px){
+    .service-image-container{
+        display: flex;
+        height: 100%;
+    }
+
+    .service-image{
+        width: 45%;
+        height: 98%;
+        display: none;
+    }
+
+    .image-service-desc h2{
+        font-size: 24px;
     }
 
     .image-service-desc p{
         font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 329px){
+    .service-image-container{
+        display: flex;
+        height: 100%;
+    }
+
+    .service-image{
+        width: 45%;
+        height: 98%;
+        display: none;
+    }
+
+    .image-service-desc h2{
+        font-size: 22px;
+    }
+
+    .image-service-desc p{
+        font-size: 16px;
     }
 }

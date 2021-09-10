@@ -1,12 +1,23 @@
 import "./styles.css"
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import {useHistory} from "react-router-dom";
 import db from "../../../database";
 
 const Login = () => {
     const [user, setUser] = useState("")
     const [pwd, setPwd] = useState("")
+    const [saveData, setSaveData] = useState(false)
     const history = useHistory()
+
+    useEffect(() => {
+        const localUser = localStorage.getItem("user")
+        const localPwd = localStorage.getItem("pwd")
+        if(localUser && localPwd){
+            setUser(localUser)
+            setPwd(localPwd)
+            setSaveData(true)
+        }
+    }, [])
 
     const login = (e) => {
         e.preventDefault()
@@ -18,8 +29,12 @@ const Login = () => {
                 if(userDB !== user || pwdDB !== pwd){
                     alert("Datos ingresados incorrectamente.")
                 }else{
-                    localStorage.setItem("user", user)
-                    localStorage.setItem("pwd", pwd)
+                    if(saveData){
+                        localStorage.setItem("user", user)
+                        localStorage.setItem("pwd", pwd)
+                    }
+                    sessionStorage.setItem("user", user)
+                    sessionStorage.setItem("pwd", pwd)
                     return history.go(0)
                 }
             })
@@ -35,13 +50,21 @@ const Login = () => {
                 </div>
                 <div className="access-section-inputs">
                     <input className="input-access"
+                           value={user}
                            onChange={(e) => setUser(e.target.value)}
                            placeholder={"Usuario:"}/>
                     <input className="input-access"
+                           value={pwd}
                            onChange={(e) => setPwd(e.target.value)}
                            placeholder={"Contraseña:"} type={"password"}/>
                 </div>
                 <button onClick={(e) => login(e)}>Iniciar sesión</button>
+                <div className="save-box">
+                    <input type={"checkbox"}
+                           checked={saveData}
+                           onChange={(e) => setSaveData(e.target.checked)}/>
+                    Recordar mis datos
+                </div>
             </div>
         </div>
     )

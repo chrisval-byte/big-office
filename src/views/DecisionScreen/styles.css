@@ -1,12 +1,62 @@
-@media only screen and (min-width: 1200px) and (max-width: 1399px) {
-    .decision-container{
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        background-color: #FAFAFA;
+.decision-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #FAFAFA;
+}
+
+.decision-section{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.intro-text{
+    width: 100%;
+    height: 22%;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 span{
+    position:absolute;
+    right:0;
+    width:0;
+    background-color: #FAFAFA;
+    border-left: 1px solid #000;
+    animation: write 5s steps(30) infinite alternate;
+}
+
+@keyframes write {
+    from { width: 55% }
+    to { width: 92% }
+}
+
+@media only screen and (min-width: 1400px) {
+    .intro-text h1{
+        margin-top: 10px;
+        font-size: 76px;
+        font-weight: lighter;
+        width: 60%;
     }
 
+    .intro-text h3{
+        font-size: 60px;
+    }
+
+    .intro-boxes{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 62%;
+        margin-top: 86px;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
     .decision-section{
         width: 80%;
         height: 100%;
@@ -39,5 +89,142 @@
 
     .intro-text h3{
         font-size: 40px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .intro-text h1{
+        margin-top: 10px;
+        font-size: 50px;
+        font-weight: lighter;
+        width: 70%;
+    }
+
+    .intro-text h3{
+        font-size: 34px;
+    }
+
+    .intro-boxes{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 62%;
+        margin-top: 86px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .intro-text h1{
+        margin-top: 10px;
+        font-size: 46px;
+        font-weight: lighter;
+        width: 70%;
+    }
+
+    .intro-text{
+        width: 100%;
+        height: 22%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .intro-text h3{
+        font-size: 30px;
+    }
+
+    .intro-boxes{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        height: 62%;
+        margin-top: 90px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .intro-text h1{
+        margin-top: 10px;
+        font-size: 46px;
+        font-weight: lighter;
+        width: 100%;
+    }
+
+    .intro-text h3{
+        font-size: 30px;
+    }
+
+    .intro-text{
+        width: 100%;
+        height: 22%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .intro-boxes{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        height: 62%;
+        margin-top: 90px;
+    }
+}
+
+@media only screen and (min-width: 330px) and (max-width: 575px) {
+    .intro-text h1{
+        margin-top: 10px;
+        font-size: 34px;
+        font-weight: lighter;
+        width: 100%;
+    }
+
+    .intro-text h3{
+        font-size: 24px;
+    }
+
+    .intro-text{
+        width: 100%;
+        height: 22%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .intro-boxes{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        height: 62%;
+        margin-top: 90px;
+    }
+}
+
+@media only screen and (max-width: 329px) {
+    .intro-text h1{
+        margin-top: 10px;
+        font-size: 28px;
+        font-weight: lighter;
+        width: 100%;
+    }
+
+    .intro-text h3{
+        font-size: 18px;
+    }
+
+    .intro-text{
+        width: 100%;
+        height: 22%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .intro-boxes{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        height: 62%;
+        margin-top: 90px;
     }
 }

@@ -10,7 +10,7 @@ const IntroBox = ({marginTop, text, to}) => {
             <Link
                 to={to}
                 className="intro-box">
-                <h2>{text} <StyledIcon iconColor={"#000"} iconName={faArrowRight}/></h2>
+                <h2>{text} <StyledIcon iconColor={"#000"} iconName={faArrowRight} marginLeft={20}/></h2>
             </Link>
         </div>
     )

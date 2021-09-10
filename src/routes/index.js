@@ -4,6 +4,8 @@ import FabricacionPage from "../views/FabricacionPage";
 import ReparacionPage from "../views/ReparacionPage";
 import ContactSection from "../components/commonSections/ContactSection";
 import Mesg from "../views/Mesg";
+import AboutSection from "../components/commonSections/AboutSection";
+import UbicationSection from "../components/commonSections/LocationSection";
 
 const Routes = () => {
     return (
@@ -23,6 +25,12 @@ const Routes = () => {
                 </Route>
                 <Route exact path="/access">
                     <Mesg/>
+                </Route>
+                <Route exact path="/nosotros">
+                    <AboutSection/>
+                </Route>
+                <Route exact path="/ubicacion">
+                    <UbicationSection/>
                 </Route>
             </Switch>
         </Router>

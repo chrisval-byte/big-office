@@ -1,20 +1,49 @@
-@media only screen and (min-width: 1200px) and (max-width: 1399px){
+.callbox-container{
+    width: 85%;
+    height: 70%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+    margin-top: 20px;
+}
+
+.callbox-section{
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px){
     .callbox-container{
-        width: 85%;
-        height: 80px;
-        background-color: #ffffff;
-        display: flex;
-        align-items: center;
-        border-radius: 10px;
-        box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
-        margin-top: 20px;
+        margin-top: 0;
+        height: 100%;
+        border-radius: 5px;
+    }
+}
+
+@media only screen and (min-width: 330px) and (max-width: 767px) {
+    .callbox-container{
+        height: 100%;
+        border-radius: 5px;
     }
 
-    .callbox-section{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-right: 30px;
+    .callbox-section h2{
+        font-size: 16px;
+    }
+}
+
+
+@media only screen and (max-width: 329px) {
+    .callbox-container{
+        height: 100%;
+        border-radius: 5px;
+    }
+
+    .callbox-section h2{
+        font-size: 16px;
     }
 }
