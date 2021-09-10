@@ -5,12 +5,13 @@ import {useEffect, useState} from "react";
 const Mesg = () => {
     const [isLogged, setIsLogged] = useState(false)
     useEffect(() => {
-        const user = localStorage.getItem("user")
-        const pwd = localStorage.getItem("pwd")
+        const user = sessionStorage.getItem("user")
+        const pwd = sessionStorage.getItem("pwd")
         if(user && pwd){
             setIsLogged(true)
         }
     }, [])
+
     return(
         <div>
             {isLogged ? <MesgAccess/> : <Login/>}
