@@ -8,7 +8,6 @@ const DecisionScreen = () => {
     const [actualWord, setActualWord] = useState("F A B R I C A C I Ó N")
     const [cont, setCont] = useState(1)
     const words = ["F A B R I C A C I Ó N", "R E P A R A C I Ó N"]
-    let time = 0
 
     useEffect(() => {
         const size = window.screen.width
@@ -18,7 +17,7 @@ const DecisionScreen = () => {
     setInterval(() => {
         setActualWord(words[cont])
         cont === 1 ? setCont(0) : setCont(1)
-    }, time === 0 ? 5000 : 10000)
+    }, 10000)
 
     return(
         <div>
