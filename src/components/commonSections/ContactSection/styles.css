@@ -1,6 +1,6 @@
 .contact-container{
     width: 100%;
-    height: 86vh;
+    height: 100vh;
     background-color: #FAFAFA;
     display: flex;
     justify-content: center;
@@ -39,6 +39,20 @@
 .contact-title p{
     font-size: 20px;
     margin-top: 30px;
+}
+
+@media only screen and (min-height: 701px) {
+    .contact-container{
+        padding-top: 0;
+        padding-bottom: 50px;
+    }
+}
+
+@media only screen and (max-height: 700px) {
+    .contact-container{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px){
@@ -85,7 +99,7 @@
 
     .contact-form{
         width: 100%;
-        height: 800px;
+        height: auto;
         display: flex;
         justify-content: center;
         align-self: center;
@@ -103,7 +117,7 @@
     }
 
     .contact-title p{
-        font-size: 16px;
+        font-size: 18px;
         margin-top: 0;
     }
 
@@ -112,6 +126,7 @@
         display: flex;
         flex-direction: column;
         width: 100%;
+        height: 80px;
         align-items: center;
     }
 }

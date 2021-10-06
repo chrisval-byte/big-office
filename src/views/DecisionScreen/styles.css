@@ -31,8 +31,8 @@ h1 span{
 }
 
 @keyframes write {
-    from { width: 55% }
-    to { width: 92% }
+    from { width: 90% }
+    to { width: 65% }
 }
 
 @media only screen and (min-width: 1400px) {
