@@ -1,7 +1,7 @@
 import "./styles.css"
 import {useEffect, useState} from "react";
 import Messages from "../../../components/specific/Messages";
-import db from "../../../database";
+import {data as db} from "../../../database";
 
 const MesgAccess = () => {
     const [cantMsg, setCantMsg] = useState(0)
@@ -18,7 +18,7 @@ const MesgAccess = () => {
             }).catch((e) => console.log("Error", e))
         }
 
-        getData()
+        getData().then()
     }, [])
 
     return(

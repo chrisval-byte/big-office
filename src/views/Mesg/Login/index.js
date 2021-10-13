@@ -1,7 +1,7 @@
 import "./styles.css"
 import {useEffect, useState} from "react";
 import {useHistory} from "react-router-dom";
-import db from "../../../database";
+import {data} from "../../../database";
 
 const Login = () => {
     const [user, setUser] = useState("")
@@ -21,7 +21,7 @@ const Login = () => {
 
     const login = (e) => {
         e.preventDefault()
-        db.collection("admins").get().then((docs) => {
+        data.collection("admins").get().then((docs) => {
             docs.forEach((admin) => {
                 const userDB = admin.get("user")
                 const pwdDB = admin.get("pwd")

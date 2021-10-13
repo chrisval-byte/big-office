@@ -3,7 +3,7 @@ import {useEffect, useState} from "react";
 import StyledIcon from "../../common/StyledIcons";
 import {faWhatsapp} from "@fortawesome/free-brands-svg-icons"
 import {faEnvelope} from "@fortawesome/fontawesome-free-solid"
-import db from "../../../database"
+import {data} from "../../../database"
 
 const Form = () => {
     const [changeIconSize, setChangeIconSize] = useState("icon-m")
@@ -23,7 +23,7 @@ const Form = () => {
     }, [])
 
     const saveClient = () => {
-        db.collection("clients").add({
+        data.collection("clients").add({
             "name": name,
             "lastName": lastName,
             "phone": phone,
@@ -32,7 +32,7 @@ const Form = () => {
     }
 
     const saveMessage = () => {
-        db.collection("messages").add({
+        data.collection("messages").add({
             "name": name,
             "lastName": lastName,
             "phone": phone,
