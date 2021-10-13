@@ -1,16 +1,19 @@
 import firebase from "firebase/app";
 import 'firebase/firestore';
+import 'firebase/storage'
 
 firebase.initializeApp({
-    apiKey: "AIzaSyA810T5hlguJGqHNIbaJ3btiyIXT1jb1cI",
-    authDomain: "big-office-86197.firebaseapp.com",
-    projectId: "big-office-86197",
-    storageBucket: "big-office-86197.appspot.com",
-    messagingSenderId: "826107610529",
-    appId: "1:826107610529:web:7a4a301de7e656f0e337e0",
-    measurementId: "G-SFQYJ6DC5Q"
+    apiKey: process.env.FIREBASE_API_KEY,
+    authDomain: process.env.DOMAIN,
+    projectId: process.env.PROJECTID,
+    storageBucket: process.env.STORAGE_BUCKET,
+    messagingSenderId: process.env.MESSAGING,
+    appId: process.env.APPID,
+    measurementId: process.env.MEASUREMENTID
 })
 
 let db = firebase.firestore();
+let storage = firebase.storage();
 
-export default db
+export const data = db
+export const store = storage
